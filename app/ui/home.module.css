@@ -1,0 +1,14 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.squre {
+  height: 0;
+  width: 30;
+  border-bottom: 30px solid rgb(223, 152, 152);
+  /* border-left: 30px solid blue; */
+  /* border-right: 30px solid green; */
+}

@@ -1,6 +1,7 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
+import AcmeLogo from "@/app/ui/acme-logo";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import styles from "@/app/ui/home.module.css";
 
 export default function Page() {
   return (
@@ -11,12 +12,15 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
+            <strong>Welcome to Acme.</strong> This is the example for the{" "}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
           </p>
+          <div className={styles.shape} />
+          <div className={styles.squre} />
+
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
